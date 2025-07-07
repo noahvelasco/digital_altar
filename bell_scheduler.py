@@ -3,7 +3,7 @@ import threading
 import simpleaudio
 import datetime
 
-BELL_TIMES = [(6, 0), (12, 0), (18, 0), (22,37)]  # 6 AM, 12 PM, 6 PM
+BELL_TIMES = [(6, 0), (12, 0), (18, 0)]  # 6 AM, 12 PM, 6 PM
 
 def play_bell():
     try:
@@ -19,7 +19,7 @@ def show_and_ring(window):
     # After 10 seconds, revert to clock
     def restore_clock():
         window.update_time()
-    threading.Timer(10, restore_clock).start()
+    threading.Timer(60, restore_clock).start()
 
 def schedule_bells(window):
     scheduler = BackgroundScheduler()

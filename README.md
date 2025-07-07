@@ -38,3 +38,23 @@ This project requires:
     ```bash
     python main.py
     ```
+
+### Rerunning the app
+
+1. Start the environment
+
+```bash
+.\venv\Scripts\activate
+```
+
+2. Start the program
+
+```bash
+python main.py
+```
+
+### Exiting the program
+
+```bash
+Alt + F4
+```

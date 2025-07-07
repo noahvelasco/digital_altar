@@ -5,7 +5,6 @@ from bell_scheduler import schedule_bells
 import sys
 
 app = QApplication(sys.argv)
-
 window = MainWindow()
 window.show()
 
