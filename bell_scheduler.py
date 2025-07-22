@@ -3,7 +3,7 @@ import threading
 import simpleaudio
 import datetime
 
-BELL_TIMES = [(6, 0), (12, 0), (18, 0)]  # 6 AM, 12 PM, 6 PM
+BELL_TIMES = [(6, 0), (12, 0), (22, 21)]  # 6 AM, 12 PM, 6 PM
 
 def play_bell():
     try:
